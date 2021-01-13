@@ -9,17 +9,17 @@ public class Main {
 
         // outcome should be 98 ( 'b' ) then.
 
-        System.out.println((int) m.decryptCaesar((char) input,(char) key));
+        System.out.println((int) m.cryptCaesar((char) input,(char) key));
     }
 
     public char crypt(char input, char key) {
 
-        return '\0';
+        return cryptCaesar(input, key);
     }
 
     public char decrypt(char input, char key) {
 
-        return '\0';
+        return decryptCaesar(input, key);
     }
 
     public char cryptCaesar(char input, char key) {
