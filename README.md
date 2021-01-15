@@ -1,6 +1,6 @@
-# Caesar encryption implementation
+# Caesar encryption and decryption implementation
 
-This is a simple implementation of the Caesar encryption algorithm.
+This is a simple implementation of the Caesar encryption and decryption algorithm.
 
 **How does it work?**
 The program uses internally the ASCII charset, meaning an A would not be 0 or 1 but 65.
@@ -20,3 +20,9 @@ Now, when we are looking at 131 it is displays the sign ƒ which is the result.
 If not, this is just because your systems console has a different charset,
 so don't worry..
 You can always cast the char value to an integer if you are unsure what is the result..
+
+
+For decryption, the reversed algorithm applies correspondingly.
+You just subtract the key from the ciphertext sign, but note:
+if the result would be negative (e.g. 33 - 34, where 34 is the key sign)
+you would have to begin again at 255 (extended ASCII) or 127 (normal ASCII).
